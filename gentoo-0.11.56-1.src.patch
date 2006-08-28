@@ -1,0 +1,24 @@
+diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x autom4te.cache -x '*compile' -x Makefile.in.in -x 'intltool*.in' -x 'xml-i18n-*.in' -x '*.pyc' -x '*.mo' -x '*.gmo' -x ABOUT-NLS -x Makevars.template -x COPYING -x INSTALL -x '*.orig' -x '*.rej' -x '*~' -x '*.temp' -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x gnome-doc-utils.make -x intltool.m4 -x omf.make -x xmldocs.make origsrc/gentoo-0.11.56/src/Makefile.am src/gentoo-0.11.56/src/Makefile.am
+--- origsrc/gentoo-0.11.56/src/Makefile.am	2004-12-26 18:55:36.000000000 -0600
++++ src/gentoo-0.11.56/src/Makefile.am	2006-08-27 18:27:30.073125000 -0500
+@@ -199,7 +199,7 @@
+ 
+ localedir=${datadir}/locale
+ 
+-CFLAGS=@GENTOO_CFLAGS@ @GTK_CFLAGS@ -I../widgets \
++CFLAGS=@GENTOO_CFLAGS@ @GTK_CFLAGS@ -I$(top_srcdir)/widgets \
+   -DPATH_CFG=\"$(sysconfdir)\" \
+   -DPATH_GRC=\"$$HOME/\" \
+   -DPATH_ICN=\"$(datadir)/gentoo/icons\"\
+diff -urN -x CYGWIN-PATCHES -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x autom4te.cache -x '*compile' -x Makefile.in.in -x 'intltool*.in' -x 'xml-i18n-*.in' -x '*.pyc' -x '*.mo' -x '*.gmo' -x ABOUT-NLS -x Makevars.template -x COPYING -x INSTALL -x '*.orig' -x '*.rej' -x '*~' -x '*.temp' -x texinfo.tex -x ylwrap -x Makefile.in -x makefile.in -x configure -x gnome-doc-utils.make -x intltool.m4 -x omf.make -x xmldocs.make origsrc/gentoo-0.11.56/widgets/Makefile.am src/gentoo-0.11.56/widgets/Makefile.am
+--- origsrc/gentoo-0.11.56/widgets/Makefile.am	2003-10-12 08:45:23.000000000 -0500
++++ src/gentoo-0.11.56/widgets/Makefile.am	2006-08-27 18:27:30.088750000 -0500
+@@ -7,7 +7,7 @@
+ modules=odemilbutton.c  odlabel.c  odscrolledbox.c
+ 
+ # Targets ---------------------------------------------------------------------
+-CFLAGS=@CFLAGS@ @GTK_CFLAGS@ -I../src
++CFLAGS=@CFLAGS@ @GTK_CFLAGS@ -I$(top_srcdir)/src
+ 
+ noinst_LIBRARIES=libwidgets.a
+ libwidgets_a_SOURCES=$(headers) $(modules)

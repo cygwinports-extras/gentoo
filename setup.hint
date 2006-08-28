@@ -1,0 +1,7 @@
+category: Utils X11
+requires: cygwin gamin glib gtk+
+sdesc: "Configurable GTK+ file manager"
+ldesc: "gentoo is a modern, powerful, flexible, and utterly 
+configurable file manager for UNIX systems, written using the GTK+ 
+toolkit. It aims to be 100% graphically configurable; there's no need 
+to edit config files by hand and then restart the application."

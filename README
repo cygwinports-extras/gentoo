@@ -1,0 +1,296 @@
+gentoo
+-------------------------------------------
+gentoo is a modern, powerful, flexible, and utterly configurable file 
+manager for UNIX systems, written using the GTK+ toolkit. It aims to be 
+100% graphically configurable; there's no need to edit config files by 
+hand and then restart the application.
+
+Runtime requirements:
+  cygwin-1.5.21-1
+  gamin-0.1.7-1
+  glib-1.2.10-3
+  gtk+-1.2.10-2
+
+Build requirements:
+(besides corresponding devel packages)
+  cygwin-1.5.21-1
+  autoconf2.5-2.59-2
+  automake1.9-1.9.6-1
+  binutils-20060709-1
+  cygport-0.2.5-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  make-3.81-1
+  sed-4.1.5-1
+
+Canonical homepage:
+  http://www.obsession.se/gentoo/
+
+Canonical download:
+  http://prdownloads.sourceforge.net/gentoo/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gentoo-0.11.56-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gentoo-0.11.56-X.cygport all
+
+This will create:
+  /usr/src/gentoo-0.11.56-X-src.tar.bz2
+  /usr/src/gentoo-0.11.56-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/gentoogtkrc
+  /etc/gentoorc
+  /usr/bin/gentoo.exe
+  /usr/share/applications/gentoo.desktop
+  /usr/share/doc/Cygwin/gentoo-0.11.56.README
+  /usr/share/doc/gentoo-0.11.56/ABOUT-NLS
+  /usr/share/doc/gentoo-0.11.56/AUTHORS
+  /usr/share/doc/gentoo-0.11.56/BUGS
+  /usr/share/doc/gentoo-0.11.56/CONFIG-CHANGES
+  /usr/share/doc/gentoo-0.11.56/COPYING
+  /usr/share/doc/gentoo-0.11.56/CREDITS
+  /usr/share/doc/gentoo-0.11.56/ChangeLog
+  /usr/share/doc/gentoo-0.11.56/FAQ
+  /usr/share/doc/gentoo-0.11.56/INSTALL
+  /usr/share/doc/gentoo-0.11.56/NEWS
+  /usr/share/doc/gentoo-0.11.56/README
+  /usr/share/doc/gentoo-0.11.56/README.NLS
+  /usr/share/doc/gentoo-0.11.56/README.gtkrc
+  /usr/share/doc/gentoo-0.11.56/TODO
+  /usr/share/doc/gentoo-0.11.56/command_args.txt
+  /usr/share/doc/gentoo-0.11.56/command_howto.txt
+  /usr/share/doc/gentoo-0.11.56/command_options.txt
+  /usr/share/doc/gentoo-0.11.56/commands.txt
+  /usr/share/doc/gentoo-0.11.56/dirhistory.txt
+  /usr/share/doc/gentoo-0.11.56/filestyles.txt
+  /usr/share/doc/gentoo-0.11.56/filetypes.txt
+  /usr/share/doc/gentoo-0.11.56/focusing.txt
+  /usr/share/doc/gentoo-0.11.56/html/acks.html
+  /usr/share/doc/gentoo-0.11.56/html/buttons.html
+  /usr/share/doc/gentoo-0.11.56/html/columns.html
+  /usr/share/doc/gentoo-0.11.56/html/commands.html
+  /usr/share/doc/gentoo-0.11.56/html/config/cfg_dirpane.html
+  /usr/share/doc/gentoo-0.11.56/html/config/cfg_gui.html
+  /usr/share/doc/gentoo-0.11.56/html/config/cfg_styles.html
+  /usr/share/doc/gentoo-0.11.56/html/config/cfg_types.html
+  /usr/share/doc/gentoo-0.11.56/html/config/gentoorc.html
+  /usr/share/doc/gentoo-0.11.56/html/config/index.html
+  /usr/share/doc/gentoo-0.11.56/html/config/template.html
+  /usr/share/doc/gentoo-0.11.56/html/contribute.html
+  /usr/share/doc/gentoo-0.11.56/html/dirpanes.html
+  /usr/share/doc/gentoo-0.11.56/html/gentoo.css
+  /usr/share/doc/gentoo-0.11.56/html/gpl.html
+  /usr/share/doc/gentoo-0.11.56/html/history.html
+  /usr/share/doc/gentoo-0.11.56/html/images/bullet.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/cfg_dirpane.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/cfg_gui.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/cfg_styles.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/cfg_styles2.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/cfg_styles3.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/cfg_types.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/cfg_types2.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/cmd_chmod.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/cmd_dialog.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/cmd_inp1.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/cmd_inp2.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/cmd_inp3.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/cmd_inp4.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/cmd_inp5.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/cmd_selectre.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/colsel.jpeg
+  /usr/share/doc/gentoo-0.11.56/html/images/columnedit.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/gentoo_logo.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/gentoo_logo_g.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/gentoo_logo_g_small.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/gentoo_logo_small.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/gentoo_logo_text.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/iconsel.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/layout.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/od__logo_small.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/popupmenu.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/popupmenu2.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/status_error.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/style_tree.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/stylesel.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/tone.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/tone2.gif
+  /usr/share/doc/gentoo-0.11.56/html/images/tone3.gif
+  /usr/share/doc/gentoo-0.11.56/html/index.html
+  /usr/share/doc/gentoo-0.11.56/html/intro.html
+  /usr/share/doc/gentoo-0.11.56/html/layout.html
+  /usr/share/doc/gentoo-0.11.56/html/menus.html
+  /usr/share/doc/gentoo-0.11.56/html/misc.html
+  /usr/share/doc/gentoo-0.11.56/html/quick.html
+  /usr/share/doc/gentoo-0.11.56/html/relnotes.html
+  /usr/share/doc/gentoo-0.11.56/html/status.html
+  /usr/share/doc/gentoo-0.11.56/html/styles.html
+  /usr/share/doc/gentoo-0.11.56/html/template.html
+  /usr/share/doc/gentoo-0.11.56/html/template_toc.html
+  /usr/share/doc/gentoo-0.11.56/html/types.html
+  /usr/share/doc/gentoo-0.11.56/html/usage.html
+  /usr/share/doc/gentoo-0.11.56/mount.txt
+  /usr/share/doc/gentoo-0.11.56/outline.txt
+  /usr/share/doc/gentoo-0.11.56/renamere.txt
+  /usr/share/doc/gentoo-0.11.56/search_howto.txt
+  /usr/share/doc/gentoo-0.11.56/symlinks.txt
+  /usr/share/gentoo/icons/AbiWord.xpm
+  /usr/share/gentoo/icons/Amiga.xpm
+  /usr/share/gentoo/icons/Animation.xpm
+  /usr/share/gentoo/icons/Apple.xpm
+  /usr/share/gentoo/icons/BSD.xpm
+  /usr/share/gentoo/icons/Bad.xpm
+  /usr/share/gentoo/icons/Battery.xpm
+  /usr/share/gentoo/icons/CDROM.xpm
+  /usr/share/gentoo/icons/Card.xpm
+  /usr/share/gentoo/icons/Database.xpm
+  /usr/share/gentoo/icons/Directory.xpm
+  /usr/share/gentoo/icons/Directory2.xpm
+  /usr/share/gentoo/icons/Document.xpm
+  /usr/share/gentoo/icons/EggTimer.xpm
+  /usr/share/gentoo/icons/ExcelCalcXLS.xpm
+  /usr/share/gentoo/icons/Executable.xpm
+  /usr/share/gentoo/icons/FIFO.xpm
+  /usr/share/gentoo/icons/Floppy.xpm
+  /usr/share/gentoo/icons/Font.xpm
+  /usr/share/gentoo/icons/GNUstep.xpm
+  /usr/share/gentoo/icons/Ghost.xpm
+  /usr/share/gentoo/icons/GnomeCalc.xpm
+  /usr/share/gentoo/icons/GnomeWord.xpm
+  /usr/share/gentoo/icons/Harddrive.xpm
+  /usr/share/gentoo/icons/Image.xpm
+  /usr/share/gentoo/icons/Internet.xpm
+  /usr/share/gentoo/icons/KDECalc.xpm
+  /usr/share/gentoo/icons/KDEWord.xpm
+  /usr/share/gentoo/icons/Kernel.xpm
+  /usr/share/gentoo/icons/Keymap.xpm
+  /usr/share/gentoo/icons/Lego.xpm
+  /usr/share/gentoo/icons/License.xpm
+  /usr/share/gentoo/icons/Linux.xpm
+  /usr/share/gentoo/icons/MSWordDoc.xpm
+  /usr/share/gentoo/icons/Makefile.xpm
+  /usr/share/gentoo/icons/Maya.xpm
+  /usr/share/gentoo/icons/Mixer.xpm
+  /usr/share/gentoo/icons/Mouse.xpm
+  /usr/share/gentoo/icons/Mouse2.xpm
+  /usr/share/gentoo/icons/NetAmiga.xpm
+  /usr/share/gentoo/icons/NetApple.xpm
+  /usr/share/gentoo/icons/NetHD.xpm
+  /usr/share/gentoo/icons/NetSGI.xpm
+  /usr/share/gentoo/icons/NetSun.xpm
+  /usr/share/gentoo/icons/NetWindows.xpm
+  /usr/share/gentoo/icons/Package.xpm
+  /usr/share/gentoo/icons/Package2.xpm
+  /usr/share/gentoo/icons/Port.xpm
+  /usr/share/gentoo/icons/Port2.xpm
+  /usr/share/gentoo/icons/PowerButton.xpm
+  /usr/share/gentoo/icons/Printer.xpm
+  /usr/share/gentoo/icons/Readme.xpm
+  /usr/share/gentoo/icons/SCSI.xpm
+  /usr/share/gentoo/icons/SoundCard.xpm
+  /usr/share/gentoo/icons/Source.xpm
+  /usr/share/gentoo/icons/Speaker.xpm
+  /usr/share/gentoo/icons/Speaker2.xpm
+  /usr/share/gentoo/icons/Spreadsheet.xpm
+  /usr/share/gentoo/icons/Tape.xpm
+  /usr/share/gentoo/icons/VRML.xpm
+  /usr/share/gentoo/icons/Windows.xpm
+  /usr/share/gentoo/icons/aiff.xpm
+  /usr/share/gentoo/icons/au.xpm
+  /usr/share/gentoo/icons/avi.xpm
+  /usr/share/gentoo/icons/bmp.xpm
+  /usr/share/gentoo/icons/bmp2.xpm
+  /usr/share/gentoo/icons/c.xpm
+  /usr/share/gentoo/icons/class.xpm
+  /usr/share/gentoo/icons/conf.xpm
+  /usr/share/gentoo/icons/core.xpm
+  /usr/share/gentoo/icons/cpp.xpm
+  /usr/share/gentoo/icons/deb.xpm
+  /usr/share/gentoo/icons/eps.xpm
+  /usr/share/gentoo/icons/exe.xpm
+  /usr/share/gentoo/icons/gentoo.png
+  /usr/share/gentoo/icons/gif.xpm
+  /usr/share/gentoo/icons/gif2.xpm
+  /usr/share/gentoo/icons/h.xpm
+  /usr/share/gentoo/icons/html.xpm
+  /usr/share/gentoo/icons/html2.xpm
+  /usr/share/gentoo/icons/iff.xpm
+  /usr/share/gentoo/icons/iff2.xpm
+  /usr/share/gentoo/icons/java.xpm
+  /usr/share/gentoo/icons/jpeg.xpm
+  /usr/share/gentoo/icons/jpeg2.xpm
+  /usr/share/gentoo/icons/log.xpm
+  /usr/share/gentoo/icons/m.xpm
+  /usr/share/gentoo/icons/man.xpm
+  /usr/share/gentoo/icons/midi.xpm
+  /usr/share/gentoo/icons/mod.xpm
+  /usr/share/gentoo/icons/mov.xpm
+  /usr/share/gentoo/icons/mov2.xpm
+  /usr/share/gentoo/icons/mp3.xpm
+  /usr/share/gentoo/icons/mpeg.xpm
+  /usr/share/gentoo/icons/o.xpm
+  /usr/share/gentoo/icons/pcx.xpm
+  /usr/share/gentoo/icons/pcx2.xpm
+  /usr/share/gentoo/icons/pdb.xpm
+  /usr/share/gentoo/icons/pdf.xpm
+  /usr/share/gentoo/icons/pl.xpm
+  /usr/share/gentoo/icons/png.xpm
+  /usr/share/gentoo/icons/png2.xpm
+  /usr/share/gentoo/icons/prc.xpm
+  /usr/share/gentoo/icons/ps.xpm
+  /usr/share/gentoo/icons/r.xpm
+  /usr/share/gentoo/icons/ra.xpm
+  /usr/share/gentoo/icons/rom.xpm
+  /usr/share/gentoo/icons/rpm.xpm
+  /usr/share/gentoo/icons/sh.xpm
+  /usr/share/gentoo/icons/sid.xpm
+  /usr/share/gentoo/icons/so.xpm
+  /usr/share/gentoo/icons/targa.xpm
+  /usr/share/gentoo/icons/targa2.xpm
+  /usr/share/gentoo/icons/tex.xpm
+  /usr/share/gentoo/icons/tiff.xpm
+  /usr/share/gentoo/icons/tiff2.xpm
+  /usr/share/gentoo/icons/txt.xpm
+  /usr/share/gentoo/icons/wav.xpm
+  /usr/share/gentoo/icons/xbm.xpm
+  /usr/share/gentoo/icons/xbm2.xpm
+  /usr/share/gentoo/icons/xcf.xpm
+  /usr/share/gentoo/icons/xpm.xpm
+  /usr/share/gentoo/icons/xpm2.xpm
+  /usr/share/locale/de/LC_MESSAGES/gentoo.mo
+  /usr/share/locale/fr/LC_MESSAGES/gentoo.mo
+  /usr/share/locale/it/LC_MESSAGES/gentoo.mo
+  /usr/share/locale/ja_JP.UTF-8/LC_MESSAGES/gentoo.mo
+  /usr/share/locale/pl/LC_MESSAGES/gentoo.mo
+  /usr/share/locale/ru_RU.KOI8-R/LC_MESSAGES/gentoo.mo
+  /usr/share/locale/ru_RU.UTF-8/LC_MESSAGES/gentoo.mo
+  /usr/share/locale/ru_RU.cp1251/LC_MESSAGES/gentoo.mo
+  /usr/share/locale/ru_RU.koi8r/LC_MESSAGES/gentoo.mo
+  /usr/share/locale/ru_RU.utf8/LC_MESSAGES/gentoo.mo
+  /usr/share/locale/sv/LC_MESSAGES/gentoo.mo
+  /usr/share/pixmaps/gentoo.png
+
+------------------
+
+Port Notes:
+
+----- version 0.11.56-1 -----
+Version bump.  Now requires gamin.
+
+----- version 0.11.55-1 -----
+Version bump.
+Includes a .desktop file.
+
+----- version 0.11.53-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
