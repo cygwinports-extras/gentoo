@@ -6,28 +6,31 @@ manager for UNIX systems, written using the GTK+ toolkit. It aims to be
 hand and then restart the application.
 
 Runtime requirements:
-  cygwin-1.5.21-1
-  gamin-0.1.7-1
-  glib-1.2.10-3
-  gtk+-1.2.10-2
+  cygwin-1.5.25-15
+  file
+  libfam0-0.1.10-2
+  libgdk_pixbuf2.0_0-2.14.7-2
+  libglib2.0_0-2.18.4-1
+  libgtk2.0_0-2.14.7-2
+  libintl8-0.17-2
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.21-1
-  autoconf2.5-2.59-2
-  automake1.9-1.9.6-1
-  binutils-20060709-1
-  cygport-0.2.5-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  make-3.81-1
-  sed-4.1.5-1
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  make-3.81-2
+  pkg-config-0.23a-2
+  sed-4.1.5-2
 
 Canonical homepage:
   http://www.obsession.se/gentoo/
 
 Canonical download:
-  http://prdownloads.sourceforge.net/gentoo/
+  http://downloads.sourceforge.net/gentoo/
 
 -------------------------------------------
 
@@ -50,97 +53,16 @@ Files included in the binary package:
   /etc/gentoorc
   /usr/bin/gentoo.exe
   /usr/share/applications/gentoo.desktop
-  /usr/share/doc/Cygwin/gentoo-0.11.56.README
-  /usr/share/doc/gentoo-0.11.56/ABOUT-NLS
-  /usr/share/doc/gentoo-0.11.56/AUTHORS
-  /usr/share/doc/gentoo-0.11.56/BUGS
-  /usr/share/doc/gentoo-0.11.56/CONFIG-CHANGES
-  /usr/share/doc/gentoo-0.11.56/COPYING
-  /usr/share/doc/gentoo-0.11.56/CREDITS
-  /usr/share/doc/gentoo-0.11.56/ChangeLog
-  /usr/share/doc/gentoo-0.11.56/FAQ
-  /usr/share/doc/gentoo-0.11.56/INSTALL
-  /usr/share/doc/gentoo-0.11.56/NEWS
-  /usr/share/doc/gentoo-0.11.56/README
-  /usr/share/doc/gentoo-0.11.56/README.NLS
-  /usr/share/doc/gentoo-0.11.56/README.gtkrc
-  /usr/share/doc/gentoo-0.11.56/TODO
-  /usr/share/doc/gentoo-0.11.56/command_args.txt
-  /usr/share/doc/gentoo-0.11.56/command_howto.txt
-  /usr/share/doc/gentoo-0.11.56/command_options.txt
-  /usr/share/doc/gentoo-0.11.56/commands.txt
-  /usr/share/doc/gentoo-0.11.56/dirhistory.txt
-  /usr/share/doc/gentoo-0.11.56/filestyles.txt
-  /usr/share/doc/gentoo-0.11.56/filetypes.txt
-  /usr/share/doc/gentoo-0.11.56/focusing.txt
-  /usr/share/doc/gentoo-0.11.56/html/acks.html
-  /usr/share/doc/gentoo-0.11.56/html/buttons.html
-  /usr/share/doc/gentoo-0.11.56/html/columns.html
-  /usr/share/doc/gentoo-0.11.56/html/commands.html
-  /usr/share/doc/gentoo-0.11.56/html/config/cfg_dirpane.html
-  /usr/share/doc/gentoo-0.11.56/html/config/cfg_gui.html
-  /usr/share/doc/gentoo-0.11.56/html/config/cfg_styles.html
-  /usr/share/doc/gentoo-0.11.56/html/config/cfg_types.html
-  /usr/share/doc/gentoo-0.11.56/html/config/gentoorc.html
-  /usr/share/doc/gentoo-0.11.56/html/config/index.html
-  /usr/share/doc/gentoo-0.11.56/html/config/template.html
-  /usr/share/doc/gentoo-0.11.56/html/contribute.html
-  /usr/share/doc/gentoo-0.11.56/html/dirpanes.html
-  /usr/share/doc/gentoo-0.11.56/html/gentoo.css
-  /usr/share/doc/gentoo-0.11.56/html/gpl.html
-  /usr/share/doc/gentoo-0.11.56/html/history.html
-  /usr/share/doc/gentoo-0.11.56/html/images/bullet.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/cfg_dirpane.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/cfg_gui.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/cfg_styles.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/cfg_styles2.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/cfg_styles3.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/cfg_types.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/cfg_types2.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/cmd_chmod.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/cmd_dialog.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/cmd_inp1.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/cmd_inp2.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/cmd_inp3.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/cmd_inp4.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/cmd_inp5.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/cmd_selectre.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/colsel.jpeg
-  /usr/share/doc/gentoo-0.11.56/html/images/columnedit.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/gentoo_logo.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/gentoo_logo_g.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/gentoo_logo_g_small.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/gentoo_logo_small.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/gentoo_logo_text.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/iconsel.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/layout.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/od__logo_small.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/popupmenu.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/popupmenu2.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/status_error.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/style_tree.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/stylesel.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/tone.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/tone2.gif
-  /usr/share/doc/gentoo-0.11.56/html/images/tone3.gif
-  /usr/share/doc/gentoo-0.11.56/html/index.html
-  /usr/share/doc/gentoo-0.11.56/html/intro.html
-  /usr/share/doc/gentoo-0.11.56/html/layout.html
-  /usr/share/doc/gentoo-0.11.56/html/menus.html
-  /usr/share/doc/gentoo-0.11.56/html/misc.html
-  /usr/share/doc/gentoo-0.11.56/html/quick.html
-  /usr/share/doc/gentoo-0.11.56/html/relnotes.html
-  /usr/share/doc/gentoo-0.11.56/html/status.html
-  /usr/share/doc/gentoo-0.11.56/html/styles.html
-  /usr/share/doc/gentoo-0.11.56/html/template.html
-  /usr/share/doc/gentoo-0.11.56/html/template_toc.html
-  /usr/share/doc/gentoo-0.11.56/html/types.html
-  /usr/share/doc/gentoo-0.11.56/html/usage.html
-  /usr/share/doc/gentoo-0.11.56/mount.txt
-  /usr/share/doc/gentoo-0.11.56/outline.txt
-  /usr/share/doc/gentoo-0.11.56/renamere.txt
-  /usr/share/doc/gentoo-0.11.56/search_howto.txt
-  /usr/share/doc/gentoo-0.11.56/symlinks.txt
+  /usr/share/doc/gentoo-0.15.1/ABOUT-NLS
+  /usr/share/doc/gentoo-0.15.1/AUTHORS
+  /usr/share/doc/gentoo-0.15.1/BUGS
+  /usr/share/doc/gentoo-0.15.1/COPYING
+  /usr/share/doc/gentoo-0.15.1/CREDITS
+  /usr/share/doc/gentoo-0.15.1/ChangeLog
+  /usr/share/doc/gentoo-0.15.1/INSTALL
+  /usr/share/doc/gentoo-0.15.1/NEWS
+  /usr/share/doc/gentoo-0.15.1/README
+  /usr/share/doc/gentoo-0.15.1/TODO
   /usr/share/gentoo/icons/AbiWord.xpm
   /usr/share/gentoo/icons/Amiga.xpm
   /usr/share/gentoo/icons/Animation.xpm
@@ -265,6 +187,7 @@ Files included in the binary package:
   /usr/share/gentoo/icons/xpm.xpm
   /usr/share/gentoo/icons/xpm2.xpm
   /usr/share/locale/de/LC_MESSAGES/gentoo.mo
+  /usr/share/locale/es_MX/LC_MESSAGES/gentoo.mo
   /usr/share/locale/fr/LC_MESSAGES/gentoo.mo
   /usr/share/locale/it/LC_MESSAGES/gentoo.mo
   /usr/share/locale/ja_JP.UTF-8/LC_MESSAGES/gentoo.mo
