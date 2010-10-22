@@ -2,8 +2,6 @@ DESCRIPTION="Gentoo GTK+ file manager"
 HOMEPAGE="http://www.obsession.se/gentoo/"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
 
-PATCH_URI="0.15.1-stdio.patch"
-
 DIFF_EXCLUDES="Makefile"
 
 src_install() {
