@@ -1,0 +1,11 @@
+--- origsrc/gentoo-0.20.3/src/Makefile.am	2011-04-11 15:15:11.000000000 -0500
++++ src/gentoo-0.20.3/src/Makefile.am	2013-10-09 20:21:27.542922500 -0500
+@@ -201,7 +201,7 @@ graphics=graphics
+ 
+ localedir=${datadir}/locale
+ 
+-CFLAGS=@GENTOO_CFLAGS@ @GTK_CFLAGS@ -I../widgets \
++AM_CFLAGS=@GENTOO_CFLAGS@ @GTK_CFLAGS@ -I../widgets \
+   -DPATH_CFG=\"$(sysconfdir)\" \
+   -DPATH_GRC=\"$$HOME/\" \
+   -DPATH_ICN=\"$(datadir)/gentoo/icons\"\

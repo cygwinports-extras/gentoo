@@ -1,7 +1,0 @@
-category: Utils X11
-requires: libgdk_pixbuf2.0_0 libglib2.0_0 libgtk2.0_0 libintl8 libpango1.0_0
-sdesc: "Configurable GTK+ file manager"
-ldesc: "gentoo is a modern, powerful, flexible, and utterly 
-configurable file manager for UNIX systems, written using the GTK+ 
-toolkit. It aims to be 100% graphically configurable; there's no need 
-to edit config files by hand and then restart the application."

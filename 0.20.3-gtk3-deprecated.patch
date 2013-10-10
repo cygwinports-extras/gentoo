@@ -1,0 +1,11 @@
+--- origsrc/gentoo-0.20.3/src/dirpane.c	2013-08-24 09:55:11.000000000 -0500
++++ src/gentoo-0.20.3/src/dirpane.c	2013-10-09 20:19:50.852392100 -0500
+@@ -2170,7 +2170,7 @@ GtkWidget * dp_build(MainInfo *min, DPFo
+ 
+ 		if((fdesc = pango_font_description_from_string(fmt->font_name)) != NULL)
+ 		{
+-			gtk_widget_modify_font(dp->view, fdesc);
++			gtk_widget_override_font(dp->view, fdesc);
+ 			pango_font_description_free(fdesc);
+ 		}
+ 	}

@@ -1,0 +1,25 @@
+NAME="gentoo"
+VERSION=0.20.3
+RELEASE=1
+CATEGORY="Utils"
+SUMMARY="Configurable GTK+ file manager"
+DESCRIPTION="gentoo is a modern, powerful, flexible, and utterly configurable
+file manager for UNIX systems, written using the GTK+ toolkit. It aims to be
+100% graphically configurable; there's no need to edit config files by hand
+and then restart the application."
+HOMEPAGE="http://www.obsession.se/gentoo/"
+SRC_URI="mirror://sourceforge/gentoo/${NAME}-${VERSION}.tar.gz"
+PATCH_URI="
+	0.20.3-cflags.patch
+	0.20.3-gtk3-deprecated.patch
+"
+
+DIFF_EXCLUDES="Makefile"
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	doicon ${S}/icons/gentoo.png
+	make_desktop_entry gentoo "Gentoo File Manager" gentoo "Utility;FileManager"
+}
